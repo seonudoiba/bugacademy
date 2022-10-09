@@ -1,6 +1,5 @@
 import React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
+import AppBar from "@mui/material/AppBar"
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
@@ -25,12 +24,12 @@ const Navbar = () => {
 	};
 
 	const drawer = (
-		<Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-			<Box className="cursor-pointer p-2">
+		<div onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+			<div className="cursor-pointer p-2">
 				<Link href="/" className="m-2 cursor-pointer">
 					<Image src="/../public/bugacedemy.png" alt="Buga" width={100} height={40} />
 				</Link>
-			</Box>
+			</div>
 
 			<Divider />
 			<List>
@@ -70,11 +69,11 @@ const Navbar = () => {
 					</ListItemButton>
 				</ListItem>
 			</List>
-		</Box>
+		</div>
 	);
 	return (
 		<div>
-			<Box>
+			<div>
 				<AppBar component="nav" className="bg-green-700 px-16 ">
 					<Toolbar className="flex justify-between">
 						<div className="cursor-pointer flex items-center justify-between">
@@ -96,7 +95,7 @@ const Navbar = () => {
 							</Link>
 						</div>
 
-						<Box sx={{ display: { xs: "none", sm: "block" } }}>
+						<div className='hidden md:block'>
 							<Button sx={{ px: 3, color: "#fff" }}>
 								<Link href="/" className="m-2">
 									Home
@@ -122,10 +121,10 @@ const Navbar = () => {
 									Testimonials
 								</Link>
 							</Button>
-						</Box>
+						</div>
 					</Toolbar>
 				</AppBar>
-				<Box component="nav">
+				<div component="nav">
 					<Drawer
 						variant="temporary"
 						open={mobileOpen}
@@ -135,12 +134,12 @@ const Navbar = () => {
 						}}
 						sx={{
 							display: { xs: "block", sm: "none" },
-							"& .MuiDrawer-paper": { boxSizing: "border-box", width: drawerWidth },
+							"& .MuiDrawer-paper": { divSizing: "border-div", width: drawerWidth },
 						}}>
 						{drawer}
 					</Drawer>
-				</Box>
-			</Box>
+				</div>
+			</div>
 		</div>
 	);
 };
