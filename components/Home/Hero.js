@@ -8,7 +8,7 @@ const Hero = () => {
 	return (
 		<div className="md:h-screen md:p-28 p-12 hero  text-center md:text-left">
 			<div>
-				<div className="text-4xl md:text-4xl  text-bold text-white p-2">BULLISH GREEN ACADEMY</div>
+				<div className="text-2xl md:text-4xl  text-bold text-white p-2">BULLISH GREEN ACADEMY</div>
 				<div className="text-sm md:text-bold text-green-700 px-6">
 					{" "}
 					We Learn to Earn
