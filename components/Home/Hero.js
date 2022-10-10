@@ -14,7 +14,7 @@ const Hero = () => {
 					We Learn to Earn
 				</div>
 				<button class="bg-transparent hover:scale-110 mx-8 my-6 hover:bg-green-700 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-700 hover:border-transparent rounded">
-				<a href="https://wa.me/2349068732140?text=Hello%20BULLISH%20GREEN%20ACADEMY,"><PaymentIcon /> BUY/SELL CRYPTO</a>
+				<a href="https://wa.link/29383j"><PaymentIcon /> BUY/SELL CRYPTO</a>
 				</button>
 			</div>
 			<div className='md:grid grid-cols-3 gap-6'>
