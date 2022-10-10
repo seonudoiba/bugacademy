@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Hero from "../components/Home/Hero";
+import AboutHero from "../components/Home/AboutHero";
 export default function Home() {
 	return (
 		<div >
@@ -11,6 +12,7 @@ export default function Home() {
 			</Head>
 
 			<Hero />
+			<AboutHero/>
 		</div>
 	);
 }

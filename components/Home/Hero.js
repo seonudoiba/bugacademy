@@ -4,12 +4,13 @@ import PaymentIcon from "@mui/icons-material/Payment";
 import StickyNote2Icon from '@mui/icons-material/StickyNote2';
 import Person4Icon from '@mui/icons-material/Person4';
 import DriveFileRenameOutlineIcon from '@mui/icons-material/DriveFileRenameOutline';
+
 const Hero = () => {
 	return (
 		<div className="md:h-screen md:p-28 p-12 hero  text-center md:text-left">
 			<div>
-				<div className="text-2xl md:text-4xl  text-bold text-white p-2">BULLISH GREEN ACADEMY</div>
-				<div className="text-sm md:text-bold text-green-700 px-6">
+				<div className="text-2xl md:text-4xl  font-bold text-white p-2">BULLISH GREEN ACADEMY</div>
+				<div className="text-sm md:font-bold text-green-700 px-6">
 					{" "}
 					We Learn to Earn
 				</div>
@@ -23,6 +24,7 @@ const Hero = () => {
 				<Card icon={<DriveFileRenameOutlineIcon sx={{ fontSize: 100  }} className='text-white'/>} text='Top classes & materials'/>
 				
 			</div>
+			
 		</div>
 	);
 };
