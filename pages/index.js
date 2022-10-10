@@ -16,6 +16,7 @@ export default function Home() {
 			<Hero />
 			<AboutHero />
 			<CourseHero />
+			<a className='mb-36 p-4 text-center mx-32 rounded-xl bg-green-800 w-8' href="https://pay.squadco.com/HNPW48">Order Now</a>
 			
 		</div>
 	);
