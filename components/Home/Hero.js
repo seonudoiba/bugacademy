@@ -18,9 +18,9 @@ const Hero = () => {
 				</button>
 			</div>
 			<div className='md:grid grid-cols-3 gap-6'>
-				<Card  icon={<StickyNote2Icon sx={{ fontSize: 100 }} className='text-white'/>} text='certified courses'/>
-				<Card icon={<Person4Icon sx={{ fontSize: 100 }} className='text-white'/>} text='certified courses'/>
-				<Card icon={<DriveFileRenameOutlineIcon sx={{ fontSize: 100  }} className='text-white'/>} text='certified courses'/>
+				<Card  icon={<StickyNote2Icon sx={{ fontSize: 100 }} className='text-white'/>} text='Certified courses'/>
+				<Card icon={<Person4Icon sx={{ fontSize: 100 }} className='text-white'/>} text='Certified Instructors'/>
+				<Card icon={<DriveFileRenameOutlineIcon sx={{ fontSize: 100  }} className='text-white'/>} text='Top classes & materials'/>
 				
 			</div>
 		</div>
