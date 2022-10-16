@@ -6,7 +6,7 @@ const PayButton = () => {
 			<Link
 				href="/Payment"
 				>
-				Pay Now
+				<a>Pay Now</a>
 			</Link>
 		</div>
 	);

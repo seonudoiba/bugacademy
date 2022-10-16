@@ -27,7 +27,7 @@ const Navbar = () => {
 		<div onClick={handleDrawerToggle} className="text-center">
 			<div className="cursor-pointer p-2">
 				<Link href="/" className="m-2 cursor-pointer">
-					<Image src="/bugacedemy.png" alt="Buga" width={100} height={40} />
+				<a><Image src="/bugacedemy.png" alt="Buga" width={100} height={40} /></a>
 				</Link>
 			</div>
 
@@ -36,35 +36,35 @@ const Navbar = () => {
 				<ListItem>
 					<ListItemButton sx={{ textAlign: "center" }}>
 						<Link href="/" className="m-2">
-							Home
+						<a>Home</a>
 						</Link>
 					</ListItemButton>
 				</ListItem>
 				<ListItem>
 					<ListItemButton sx={{ textAlign: "center" }}>
 						<Link href="/About" className="m-2">
-							About Us
+						<a>About Us</a>
 						</Link>
 					</ListItemButton>
 				</ListItem>
 				<ListItem>
 					<ListItemButton sx={{ textAlign: "center" }}>
 						<Link href="/Contact" className="m-2">
-							Contact Us
+						<a>Contact Us</a>
 						</Link>
 					</ListItemButton>
 				</ListItem>
 				<ListItem>
 					<ListItemButton sx={{ textAlign: "center" }}>
 						<Link href="/Courses" className="m-2">
-							Online Courses
+						<a>Online Courses</a>
 						</Link>
 					</ListItemButton>
 				</ListItem>
 				<ListItem>
 					<ListItemButton sx={{ textAlign: "center" }}>
 						<Link href="/Testimonials" className="m-2">
-							Testimonials
+						<a>Testimonials</a>
 						</Link>
 					</ListItemButton>
 				</ListItem>
@@ -85,34 +85,34 @@ const Navbar = () => {
 						</IconButton>
 
 						<Link href="/" className="m-2">
-							<Image src="/bugacedemy.png" alt="Buga" width={100} height={40} />
+						<a><Image src="/bugacedemy.png" alt="Buga" width={100} height={40} /></a>
 						</Link>
 					</div>
 
 					<div className="hidden md:block">
 						<Button sx={{ px: 3, color: "#fff" }}>
 							<Link href="/" className="m-2">
-								Home
+							<a>Home</a>
 							</Link>
 						</Button>
 						<Button sx={{ px: 3, color: "#fff" }}>
 							<Link href="/About" className="m-2">
-								About Us
+							<a>About Us</a>
 							</Link>
 						</Button>
 						<Button sx={{ px: 3, color: "#fff" }}>
 							<Link href="/Contact" className="m-2">
-								Contact Us
+							<a>Contact Us</a>
 							</Link>
 						</Button>
 						<Button sx={{ px: 3, color: "#fff" }}>
 							<Link href="/Courses" className="m-2">
-								Online Courses
+							<a>Online Courses</a>
 							</Link>
 						</Button>
 						<Button sx={{ px: 3, color: "#fff" }}>
 							<Link href="/Testimonials" className="m-2">
-								Testimonials
+								<a>Testimonials</a>
 							</Link>
 						</Button>
 					</div>

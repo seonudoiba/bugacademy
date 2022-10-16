@@ -32,7 +32,7 @@ const Footer = () => {
 				>
 				© 2022 Copyright : 
 				<Link className="text-white" href="https://tailwind-elements.com/">
-                &nbsp; Bullish Green Academy
+                <a> &nbsp; Bullish Green Academy</a>
 				</Link>
 			</div>
 		</footer>
