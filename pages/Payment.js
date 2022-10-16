@@ -18,7 +18,7 @@ const PayButton = () => {
 		},
 		publicKey,
 		text: "Pay #20,000",
-		onSuccess: () => console.log(response.data),
+		onSuccess: (response) => console.log(response.data.status),
 		onClose: () => alert("CLosed!!"),
 	};
 
