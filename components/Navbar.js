@@ -86,9 +86,9 @@ const Navbar = () => {
 							<MenuIcon />
 						</IconButton>
 						<div className="flex justify-center w-72 md:w-auto md:hidden">
-							<Link href="/" className="m-2 ">
+							<Link href="/">
 								<a>
-									<Image src="/logo2.jpeg" alt="Buga" width={200} height={40} />
+									<Image src="/logo2.jpeg" alt="Buga" width={180} height={40} />
 								</a>
 							</Link>
 						</div>
