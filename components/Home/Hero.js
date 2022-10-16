@@ -4,7 +4,7 @@ import PaymentIcon from "@mui/icons-material/Payment";
 import StickyNote2Icon from "@mui/icons-material/StickyNote2";
 import Person4Icon from "@mui/icons-material/Person4";
 import DriveFileRenameOutlineIcon from "@mui/icons-material/DriveFileRenameOutline";
-
+import Link from "next/link";
 const Hero = () => {
 	return (
 		<div className="md:h-screen md:p-28 p-12 hero  text-center md:text-left">
