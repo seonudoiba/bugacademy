@@ -1,5 +1,5 @@
 import React from "react";
-import Link from 'next/Link'
+import Link from 'next/link';
 const Footer = () => {
 	return (
 		<footer className="text-center flex flex-col justify-center items-center pb-6 bg-green-700  text-white" >
