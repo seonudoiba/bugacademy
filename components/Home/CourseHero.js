@@ -38,6 +38,7 @@ const CourseHero = () => {
 						<h2 className="font-bold text-8xl pt-6">M</h2>
 						<div className="text-xl font-bold py-6 ">Modern Careers</div>
 						<div className="h-2 mb-8 bg-red-900 pb-2 w-12  "></div>
+						___________________________________________________
 					</div>
 				</div>
 			</div>
