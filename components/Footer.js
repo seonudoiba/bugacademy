@@ -1,31 +1,26 @@
 import React from "react";
 import Link from 'next/link';
+import { FaTwitter, FaInstagram, FaTelegram, FaWhatsapp } from 'react-icons/fa';
+
 const Footer = () => {
 	return (
 		<footer className="text-center flex flex-col justify-center items-center pb-6 bg-green-700  text-white" >
-			{/* <div className="container pt-9">
-				<div className="flex justify-center mb-9">
+			<div className="">
+				<div className="flex justify-center mt-9 space-x-12 ">
 					<Link href="" className="mr-9 text-black">
-						
+						<FaTwitter className="text-3xl cursor-pointer"/>
 					</Link>
 					<Link href="#!" className="mr-9 text-black">
-						
+						<FaInstagram className="text-3xl cursor-pointer"/>
 					</Link>
 					<Link href="#!" className="mr-9 text-black">
-						
+						<FaTelegram className="text-3xl cursor-pointer"/>
 					</Link>
-					<Link href="#!" className="mr-9 text-black">
-						
+					<Link href="https://wa.link/29383j" className="mr-9 text-black">
+						<FaWhatsapp className="text-3xl cursor-pointer"/>
 					</Link>
-					<Link href="#!" className="mr-9 text-black">
-						
-					</Link>
-					<Link href="#!" className="text-black">
-						
-					</Link>
-                    hello
 				</div>
-			</div> */}
+			</div>
 
 			<div
 				className="text-center text-white font-bold p-4"

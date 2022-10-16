@@ -27,7 +27,9 @@ const Navbar = () => {
 		<div onClick={handleDrawerToggle} className="text-center">
 			<div className="cursor-pointer p-2">
 				<Link href="/" className="m-2 cursor-pointer">
-				<a><Image src="/bugacedemy.png" alt="Buga" width={100} height={40} /></a>
+					<a>
+						<Image src="/bugacedemy.png" alt="Buga" width={100} height={40} />
+					</a>
 				</Link>
 			</div>
 
@@ -36,35 +38,35 @@ const Navbar = () => {
 				<ListItem>
 					<ListItemButton sx={{ textAlign: "center" }}>
 						<Link href="/" className="m-2">
-						<a>Home</a>
+							<a>Home</a>
 						</Link>
 					</ListItemButton>
 				</ListItem>
 				<ListItem>
 					<ListItemButton sx={{ textAlign: "center" }}>
 						<Link href="/About" className="m-2">
-						<a>About Us</a>
+							<a>About Us</a>
 						</Link>
 					</ListItemButton>
 				</ListItem>
 				<ListItem>
 					<ListItemButton sx={{ textAlign: "center" }}>
 						<Link href="/Contact" className="m-2">
-						<a>Contact Us</a>
+							<a>Contact Us</a>
 						</Link>
 					</ListItemButton>
 				</ListItem>
 				<ListItem>
 					<ListItemButton sx={{ textAlign: "center" }}>
 						<Link href="/Courses" className="m-2">
-						<a>Online Courses</a>
+							<a>Online Courses</a>
 						</Link>
 					</ListItemButton>
 				</ListItem>
 				<ListItem>
 					<ListItemButton sx={{ textAlign: "center" }}>
 						<Link href="/Testimonials" className="m-2">
-						<a>Testimonials</a>
+							<a>Testimonials</a>
 						</Link>
 					</ListItemButton>
 				</ListItem>
@@ -83,31 +85,41 @@ const Navbar = () => {
 							sx={{ mr: 2, display: { sm: "none" } }}>
 							<MenuIcon />
 						</IconButton>
-
-						<Link href="/" className="m-2">
-						<a><Image src="/bugacedemy.png" alt="Buga" width={100} height={40} /></a>
-						</Link>
+						<div className="flex justify-center w-72 md:w-auto md:hidden">
+							<Link href="/" className="m-2 ">
+								<a>
+									<Image src="/logo2.jpeg" alt="Buga" width={300} height={40} />
+								</a>
+							</Link>
+						</div>
+						<div className="hidden md:block">
+							<Link href="/" className="m-2 ">
+								<a>
+									<Image src="/bugacedemy.png" alt="Buga" width={120} height={40} />
+								</a>
+							</Link>
+						</div>
 					</div>
 
 					<div className="hidden md:block">
 						<Button sx={{ px: 3, color: "#fff" }}>
 							<Link href="/" className="m-2">
-							<a>Home</a>
+								<a>Home</a>
 							</Link>
 						</Button>
 						<Button sx={{ px: 3, color: "#fff" }}>
 							<Link href="/About" className="m-2">
-							<a>About Us</a>
+								<a>About Us</a>
 							</Link>
 						</Button>
 						<Button sx={{ px: 3, color: "#fff" }}>
 							<Link href="/Contact" className="m-2">
-							<a>Contact Us</a>
+								<a>Contact Us</a>
 							</Link>
 						</Button>
 						<Button sx={{ px: 3, color: "#fff" }}>
 							<Link href="/Courses" className="m-2">
-							<a>Online Courses</a>
+								<a>Online Courses</a>
 							</Link>
 						</Button>
 						<Button sx={{ px: 3, color: "#fff" }}>
