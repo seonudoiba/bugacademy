@@ -15,7 +15,9 @@ const Hero = () => {
 				<div className="text-sm md:font-bold text-green-700 px-6"> We Learn to Earn</div>
 				<button className="bg-transparent hover:scale-110 mx-8 my-6 hover:bg-green-700 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-700 hover:border-transparent rounded">
 					<Link href="/Courses">
-						<PaymentIcon /> <a>Pay for a Course</a>
+						<a>
+							<PaymentIcon /> Pay for a Course
+						</a>
 					</Link>
 					{/* <a href="https://wa.link/29383j"><PaymentIcon /> BUY/SELL CRYPTO</a> */}
 				</button>
