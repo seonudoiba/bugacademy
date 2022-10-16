@@ -62,7 +62,7 @@ const PayButton = () => {
 					</div>
 				</form>
 				<PaystackButton
-					disabled
+					
 					className="h-10 m-4 px-6 font-semibold rounded-md bg-green-600 text-white"
 					{...componentProps}
 				/>

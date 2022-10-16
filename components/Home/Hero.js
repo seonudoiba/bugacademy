@@ -19,7 +19,6 @@ const Hero = () => {
 							<PaymentIcon /> Pay for a Course
 						</a>
 					</Link>
-					{/* <a href="https://wa.link/29383j"><PaymentIcon /> BUY/SELL CRYPTO</a> */}
 				</button>
 			</div>
 			<div className="md:grid grid-cols-3 gap-6">
