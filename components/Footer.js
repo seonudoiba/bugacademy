@@ -23,6 +23,7 @@ const Footer = () => {
 					<Link href="#!" className="text-black">
 						
 					</Link> */}
+                    hello
 				</div>
 			</div>
 
