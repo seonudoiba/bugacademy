@@ -13,7 +13,7 @@ const Hero = () => {
 					BULLISH GREEN ACADEMY
 				</div>
 				<div className="text-sm md:font-bold text-green-700 px-6"> We Learn to Earn</div>
-				<button class="bg-transparent hover:scale-110 mx-8 my-6 hover:bg-green-700 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-700 hover:border-transparent rounded">
+				<button className="bg-transparent hover:scale-110 mx-8 my-6 hover:bg-green-700 text-green-700 font-semibold hover:text-white py-2 px-4 border border-green-700 hover:border-transparent rounded">
 					<Link href="/Courses">
 						<PaymentIcon /> Pay for a Course
 					</Link>
