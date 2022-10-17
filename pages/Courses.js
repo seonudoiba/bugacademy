@@ -17,15 +17,15 @@ const Courses = () => {
 			{/* ////////////////////////////////////////// */}
 			<div className=" md:flex justify-center mx-auto ">
 				<div className="md:w-5/12 shadow mx-4 md:p-8 p-4">
-					<Course />
+					<Course amount={25000} image="spot"/>
 				</div>
 				<div className="md:w-5/12 shadow mx-4 md:p-8 p-4">
-					<Course />
+					<Course amount={50000} image='crypto'/>
 				</div>
 			</div>
 			<div className=" md:flex justify-center mx-auto ">
 				<div className="md:w-5/12 shadow mx-4 md:p-8 p-4">
-					<Course />
+					<Course amount={20000} image='defi'/>
 				</div>
 			</div>
 		</div>

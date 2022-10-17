@@ -4,9 +4,9 @@ import { PaystackButton } from "react-paystack";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
-const PayButton = () => {
-	const publicKey = "pk_test_712d32ccfd4291f7990393998e1f664d90a087c1";
-	const amount = 10000000; // Remember, set in kobo!
+const Payment = ({ price }) => {
+	const publicKey = "pk_live_29ff08dd191bdddb67af65f590a9fbd2e9f511c7";
+	const amount = price * 100; // Remember, set in kobo!
 	const [email, setEmail] = useState("");
 	const [name, setName] = useState("");
 	const [phone, setPhone] = useState("");
@@ -19,9 +19,9 @@ const PayButton = () => {
 			phone,
 		},
 		publicKey,
-		text: "Pay #20,000",
+		text: `Pay #${price}`,
 		onSuccess: () => router.push("/verified"),
-		onClose: () => alert("Are you sure you dont want to continue with the payment?!!"),
+		onClose: () => alert("Are you sure you want to Cancel the payment?!!"),
 	};
 
 	return (
@@ -72,4 +72,10 @@ const PayButton = () => {
 	);
 };
 
-export default PayButton;
+Payment.getInitialProps = async ({ query }) => {
+	const { price } = query;
+
+	return { price };
+};
+
+export default Payment;
