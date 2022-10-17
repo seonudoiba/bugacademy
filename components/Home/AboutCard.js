@@ -17,7 +17,7 @@ export default function BasicCard() {
 				</Typography>
 				<div variant="body2">
 					<p>
-						BUGA This academy was first known as
+						This academy was first known as
 						cryptospin academy in September, 2021 now known as the bullish green academy
 						August , 2022 There has been a rebrand for those that are early to joined are
 						lucky because they joined on discount prices
