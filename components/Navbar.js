@@ -85,7 +85,7 @@ const Navbar = () => {
 							sx={{ mr: 2, display: { sm: "none" } }}>
 							<MenuIcon />
 						</IconButton>
-						<div className="flex justify-center w-72 md:w-auto md:hidden">
+						<div className="flex items-center w-72 md:w-auto md:hidden">
 							<Link href="/">
 								<a>
 									<Image src="/logo2.jpeg" alt="Buga" width={180} height={40} />
