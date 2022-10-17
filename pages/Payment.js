@@ -24,7 +24,7 @@ const PayButton = () => {
 
 	return (
 		<div className="flex h-screen justify-center hero">
-			<div className="flex flex-col font-sans justify-center items-center md:mx-32 text-lg w-full  md:w-1/2 bg-white">
+			<div className="flex flex-col font-sans justify-center items-center md:mx-32 text-lg w-11/12 mx-auto md:w-1/2 bg-white">
 				<div className="text-2xl md:text-4xl  font-bold  py-2">BULLISH GREEN ACADEMY</div>
 				<div className="text-md md:text-lg  mx-auto w-3/4 py-2">
 					Fill the Form below to complete your Payment

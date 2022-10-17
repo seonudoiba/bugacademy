@@ -11,23 +11,20 @@ const Courses = () => {
 						OUR COURSES
 					</div>
 					<div className="h-1 bg-red-700  w-12 ml-2 my-2"></div>
-					<div className="text-lg md:font-bold text-white px-6">
-						Admissions open !
-					</div>
+					<div className="text-lg md:font-bold text-white px-6">Admissions open !</div>
 				</div>
 			</div>
 			{/* ////////////////////////////////////////// */}
-			<div className=" md:flex justify-center wx-32">
+			<div className=" md:flex justify-center mx-auto ">
 				<div className="md:w-5/12 shadow mx-4 md:p-8 p-4">
 					<Course />
 				</div>
 				<div className="md:w-5/12 shadow mx-4 md:p-8 p-4">
 					<Course />
 				</div>
-				
 			</div>
-			<div className=" flex justify-center wx-32">
-			<div className="md:w-5/12 shadow mx-4 md:p-8 p-4">
+			<div className=" md:flex justify-center mx-auto ">
+				<div className="md:w-5/12 shadow mx-4 md:p-8 p-4">
 					<Course />
 				</div>
 			</div>
