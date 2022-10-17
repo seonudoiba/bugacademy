@@ -4,34 +4,57 @@ const Contact = () => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
-	const [submitted, setSubmitted] = useState(false);
 
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		console.log("Sending");
-		let data = {
-			name,
-			email,
-			message,
-		};
-		fetch("/api/contact", {
-			method: "POST",
-			headers: {
-				Accept: "application/json, text/plain, */*",
-				"Content-Type": "application/json",
-			},
-			body: JSON.stringify(data),
+	// const handleSubmit = (e) => {
+	// 	e.preventDefault();
+	// 	console.log("Sending");
+	// 	let data = {
+	// 		name,
+	// 		email,
+	// 		message,
+	// 	};
+	// 	fetch("/api/contact", {
+	// 		method: "POST",
+	// 		body: JSON.stringify(data),
+	// 	});
+	// 	// .then((res) => {
+	// 	// 	console.log("Response received");
+	// 	// 	if (res.status === 200) {
+	// 	// 		console.log("Response succeeded!");
+	// 	// 		setSubmitted(true);
+	// 	// 		setName("");
+	// 	// 		setEmail("");
+	// 	// 		setBody("");
+	// 	// 	}
+	// 	// });
+	// };
+
+	const handleSubmit = (e) => { 
+		e.preventDefault()
+		console.log('Sending')
+	  let data = {
+		  name,
+		  email,
+		  message
+		}
+	  fetch('/api/contact', {
+		  method: 'POST',
+		  headers: {
+			'Accept': 'application/json, text/plain, */*',
+			'Content-Type': 'application/json'
+		  },
+		  body: JSON.stringify(data)
 		}).then((res) => {
-			console.log("Response received");
-			if (res.status === 200) {
-				console.log("Response succeeded!");
-				setSubmitted(true);
-				setName("");
-				setEmail("");
-				setBody("");
-			}
-		});
-	};
+		  console.log('Response received')
+		  if (res.status === 200) {
+			console.log('Response succeeded!')
+			setSubmitted(true)
+			setName('')
+			setEmail('')
+			setBody('')
+		  }
+		})
+	  }
 
 	return (
 		<section className="bg-white dark:bg-gray-900">
@@ -60,6 +83,7 @@ const Contact = () => {
 							onChange={(e) => {
 								setName(e.target.value);
 							}}
+							value={name}
 							type="name"
 							id="name"
 							className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900
@@ -81,6 +105,7 @@ const Contact = () => {
 							onChange={(e) => {
 								setEmail(e.target.value);
 							}}
+							value={email}
 							type="email"
 							id="email"
 							className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900
@@ -105,12 +130,13 @@ const Contact = () => {
 							}}
 							id="message"
 							rows="6"
+							value={message}
 							className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
 							placeholder="Leave a comment..."></textarea>
 					</div>
 
 					<button
-						onChange={handleSubmit}
+						onClick={handleSubmit}
 						className="shadow bg-green-700 hover:bg-green-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
 						type="submit">
 						Send message

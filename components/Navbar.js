@@ -75,7 +75,7 @@ const Navbar = () => {
 	);
 	return (
 		<div>
-			<div component="nav" className="bg-gray-700  px-16 ">
+			<div component="nav" className="bg-gray-100 md:bg-gray-700 px-16 ">
 				<div className="flex justify-between py-2">
 					<div className="cursor-pointer flex items-center justify-between">
 						<IconButton
