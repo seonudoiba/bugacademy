@@ -1,5 +1,5 @@
 import React from "react";
-import Course from "../components/Courses/Course";
+import Course from "../components/Course";
 import PaymentIcon from "@mui/icons-material/Payment";
 
 const Courses = () => {

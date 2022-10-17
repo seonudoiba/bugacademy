@@ -2,13 +2,15 @@ import React from "react";
 import { useState } from "react";
 import { PaystackButton } from "react-paystack";
 import Image from "next/image";
+import { useRouter } from "next/router";
+
 const PayButton = () => {
 	const publicKey = "pk_test_712d32ccfd4291f7990393998e1f664d90a087c1";
 	const amount = 10000000; // Remember, set in kobo!
 	const [email, setEmail] = useState("");
 	const [name, setName] = useState("");
 	const [phone, setPhone] = useState("");
-
+	let router = useRouter();
 	const componentProps = {
 		email,
 		amount,
@@ -18,8 +20,8 @@ const PayButton = () => {
 		},
 		publicKey,
 		text: "Pay #20,000",
-		onSuccess: (response) => console.log(response.data.status),
-		onClose: () => alert("CLosed!!"),
+		onSuccess: () => router.push("/verified"),
+		onClose: () => alert("Are you sure you dont want to continue with the payment?!!"),
 	};
 
 	return (
@@ -62,7 +64,6 @@ const PayButton = () => {
 					</div>
 				</form>
 				<PaystackButton
-					
 					className="h-10 m-4 px-6 font-semibold rounded-md bg-green-600 text-white"
 					{...componentProps}
 				/>
