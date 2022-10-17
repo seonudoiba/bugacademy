@@ -75,7 +75,7 @@ const Navbar = () => {
 	);
 	return (
 		<div>
-			<div component="nav" className="bg-green-700 px-16 ">
+			<div component="nav" className="bg-white px-16 ">
 				<div className="flex justify-between py-2">
 					<div className="cursor-pointer flex items-center justify-between">
 						<IconButton
@@ -88,7 +88,7 @@ const Navbar = () => {
 						<div className="flex items-center w-72 md:w-auto md:hidden">
 							<Link href="/">
 								<a>
-									<Image src="/logo2.jpeg" alt="Buga" width={220} height={40} />
+									<Image src="/logo2.png" alt="Buga" width={250} height={50} />
 								</a>
 							</Link>
 						</div>
