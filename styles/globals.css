@@ -1,36 +1,19 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .hero {
 	background-image: url("../public/bg-hero.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-/* .bg-hero {
-	background-image: url("../public/buga-main.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height:100vmax;
-	position: relative;
-	border:1px solid red
-	
+/* .custom-img {
+	object-fit: contain;
+	width: 100% !important;
+	position: relative ;
 }
-bg-blur{
-	background: rgba(21 128 61 0.5 );
-	backdrop-filter: blur(15px);
-	position: absolute;
+
+.unset-img {
 	width: 100%;
-	height:100%;
-	z-index: 1;
-}
-h2{
-	position: absolute;
-	width: 100%;
-	height:100%;
-	z-index: 2;
 } */
+

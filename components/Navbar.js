@@ -1,15 +1,10 @@
 import React from "react";
-import AppBar from "@mui/material/AppBar";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
-
 import MenuIcon from "@mui/icons-material/Menu";
-import Toolbar from "@mui/material/Toolbar";
-
 import Button from "@mui/material/Button";
 import Image from "next/image";
 import Link from "next/link";
@@ -75,14 +70,15 @@ const Navbar = () => {
 	);
 	return (
 		<div>
-			<div component="nav" className="bg-gray-700  px-16 ">
+			<div component="nav" className="md:bg-gray-700 py-4 px-16 ">
 				<div className="flex justify-between py-2">
 					<div className="cursor-pointer flex items-center justify-between">
 						<IconButton
 							aria-label="open drawer"
 							edge="start"
+							size="large"
 							onClick={handleDrawerToggle}
-							sx={{ mr: 2, display: { sm: "none" } }}>
+							sx={{ mr: 2, display: { md: "none" } }}>
 							<MenuIcon />
 						</IconButton>
 						<div className="flex items-center w-72 md:w-auto md:hidden">
@@ -103,27 +99,27 @@ const Navbar = () => {
 
 					<div className="hidden md:block">
 						<Button sx={{ px: 3, color: "#fff" }}>
-							<Link href="/" className="m-2">
+							<Link href="/" className="m-2 text-3xl hover:text-red font-bold">
 								<a>Home</a>
 							</Link>
 						</Button>
 						<Button sx={{ px: 3, color: "#fff" }}>
-							<Link href="/About" className="m-2">
+							<Link href="/About" className="m-2 text-3xl hover:text-red font-bold">
 								<a>About Us</a>
 							</Link>
 						</Button>
 						<Button sx={{ px: 3, color: "#fff" }}>
-							<Link href="/Contact" className="m-2">
+							<Link href="/Contact" className="m-2 text-3xl hover:text-red font-bold">
 								<a>Contact Us</a>
 							</Link>
 						</Button>
 						<Button sx={{ px: 3, color: "#fff" }}>
-							<Link href="/Courses" className="m-2">
+							<Link href="/Courses" className="m-2 text-3xl hover:text-red font-bold">
 								<a>Online Courses</a>
 							</Link>
 						</Button>
 						<Button sx={{ px: 3, color: "#fff" }}>
-							<Link href="/Testimonials" className="m-2">
+							<Link href="/Testimonials" className="m-2 text-3xl hover:text-red font-bold">
 								<a>Testimonials</a>
 							</Link>
 						</Button>
