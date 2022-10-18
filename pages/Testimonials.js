@@ -54,7 +54,7 @@ const Testimonials = () => {
 					/>
 				</div>
 			</div>
-			<div className=" md:flex justify-center mx-auto ">
+			{/* <div className=" md:flex justify-center mx-auto ">
 				<div className="md:w-5/12 shadow m-4 md:my-8 md:p-8 p-4 ">
 					<Image
 						src="/review5.jpg"
@@ -64,7 +64,7 @@ const Testimonials = () => {
 						objectFit="cover"
 					/>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };
