@@ -69,7 +69,7 @@ const Navbar = () => {
 		</div>
 	);
 	return (
-		<div>
+		<div className="w-full">
 			<div component="nav" className="md:bg-gray-700 py-4 px-16 ">
 				<div className="flex justify-between py-2">
 					<div className="cursor-pointer flex items-center justify-between">
@@ -119,7 +119,9 @@ const Navbar = () => {
 							</Link>
 						</Button>
 						<Button sx={{ px: 3, color: "#fff" }}>
-							<Link href="/Testimonials" className="m-2 text-3xl hover:text-red font-bold">
+							<Link
+								href="/Testimonials"
+								className="m-2 text-3xl hover:text-red font-bold">
 								<a>Testimonials</a>
 							</Link>
 						</Button>
