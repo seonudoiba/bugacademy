@@ -22,7 +22,7 @@ const About = () => {
 				<div variant="body2" className="text-3xl text-left">
 					<p>
 						This academy was first known as cryptospin academy in September, 2021 now
-						known as the bullish green academy August , 2022 There has been a rebrand for
+						known as the bullish green academy August , 2022. <br/>There has been a rebrand for
 						those that are early to joined are lucky because they joined on discount
 						prices.
 					</p>
