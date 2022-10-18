@@ -13,8 +13,8 @@ export default function (req, res) {
 		port: 465,
 		host: "smtp.gmail.com",
 		auth: {
-			user: "biodunrahman05@gmail.com",
-			pass: "abdulrahman",
+			user: "biodunravvhman05@gmail.com",
+			pass: "Abdullah",
 		},
 		secure: true,
 	});

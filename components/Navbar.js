@@ -84,7 +84,7 @@ const Navbar = () => {
 						<div className="flex items-center w-72 md:w-auto md:hidden">
 							<Link href="/">
 								<a>
-									<Image src="/logo2.png" alt="Buga" width={250} height={50} />
+									<Image src="/logo2.png" alt="Buga" width={200} height={50} />
 								</a>
 							</Link>
 						</div>
