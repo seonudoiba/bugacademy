@@ -16,48 +16,53 @@ const Testimonials = () => {
 
 			<div className=" md:flex justify-center mx-auto ">
 				<div className="md:w-5/12 shadow m-4 md:my-8 md:p-8 p-4 ">
-					
-						<Image
-							src="/review1.jpg"
-							alt="image-alt-text"
-							width={1280}
-							height={1280}
-							objectFit="cover"
-						/>
-					
+					<Image
+						src="/review1.jpg"
+						alt="image-alt-text"
+						width={1280}
+						height={1280}
+						objectFit="cover"
+					/>
 				</div>
 				<div className="md:w-5/12 shadow m-4 md:my-8 md:p-8 p-4 ">
-					
-						<Image
-							src="/review2.jpg"
-							alt="image-alt-text"
-							width={1280}
-							height={1280}
-							objectFit="cover"
-						/>
-					
+					<Image
+						src="/review2.jpg"
+						alt="image-alt-text"
+						width={1280}
+						height={1280}
+						objectFit="cover"
+					/>
 				</div>
 			</div>
 			<div className=" md:flex justify-center mx-auto ">
 				<div className="md:w-5/12 shadow m-4 md:my-8 md:p-8 p-4 ">
-				<Image
-							src="/review3.jpg"
-							alt="image-alt-text"
-							width={1280}
-							height={1280}
-							objectFit="cover"
-						/>
+					<Image
+						src="/review3.jpg"
+						alt="image-alt-text"
+						width={1280}
+						height={1280}
+						objectFit="cover"
+					/>
 				</div>
 				<div className="md:w-5/12 shadow m-4 md:my-8 md:p-8 p-4 ">
-					
-						<Image
-							src="/review4.jpg"
-							alt="image-alt-text"
-							width={1280}
-							height={1280}
-							objectFit="cover"
-						/>
-					
+					<Image
+						src="/review4.jpg"
+						alt="image-alt-text"
+						width={1280}
+						height={1280}
+						objectFit="cover"
+					/>
+				</div>
+			</div>
+			<div className=" md:flex justify-center mx-auto ">
+				<div className="md:w-5/12 shadow m-4 md:my-8 md:p-8 p-4 ">
+					<Image
+						src="/review5.jpg"
+						alt="image-alt-text"
+						width={1280}
+						height={1280}
+						objectFit="cover"
+					/>
 				</div>
 			</div>
 		</div>
