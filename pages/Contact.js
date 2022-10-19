@@ -15,7 +15,7 @@ let router = useRouter()
 		let whapsubject = subject.replace(/\n/g, '%0D').replace(/\s/g, '%20')
 		let whapsemail = email.replace(/\n/g, '%0D').replace(/\s/g, '%20')
 		console.log(whapsmessage);
-		router.push(`http://wa.me/2349072709373?text=${whapsubject}.%0D${whapsmessage}.%0D%20%0DName:%20${whapsname}%0D%20%0DEmail:%20${whapsemail}`)
+		router.push(`http://wa.me/2349068732140?text=${whapsubject}.%0D${whapsmessage}.%0D%20%0DName:%20${whapsname}%0D%20%0DEmail:%20${whapsemail}`)
 	};
 	return (
 		<section className="bg-white dark:bg-gray-900">
