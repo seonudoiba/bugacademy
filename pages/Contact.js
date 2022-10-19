@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 const Contact = () => {
 	const [name, setName] = useState("");
+	const [subject, setSubject] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
 let router = useRouter()
@@ -10,8 +11,11 @@ let router = useRouter()
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		let whapsmessage = message.replace(/\n/g, '%0D').replace(/\s/g, '%20')
+		let whapsname = name.replace(/\n/g, '%0D').replace(/\s/g, '%20')
+		let whapsubject = subject.replace(/\n/g, '%0D').replace(/\s/g, '%20')
+		let whapsemail = email.replace(/\n/g, '%0D').replace(/\s/g, '%20')
 		console.log(whapsmessage);
-		router.push(`http://wa.me/2349072709373?text=${whapsmessage}`)
+		router.push(`http://wa.me/2349072709373?text=${whapsubject}.%0D${whapsmessage}.%0D%20%0DName:%20${whapsname}%0D%20%0DEmail:%20${whapsemail}`)
 	};
 	return (
 		<section className="bg-white dark:bg-gray-900">
@@ -49,6 +53,28 @@ let router = useRouter()
                 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 
                 dark:focus:border-primary-500 dark:shadow-sm-light"
 							placeholder="Name"
+							required
+						/>
+					</div>
+					<div>
+						<label
+							for="name"
+							className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+							Subject
+						</label>
+						<input
+							onChange={(e) => {
+								setSubject(e.target.value);
+							}}
+							value={subject}
+							type="name"
+							id="subject"
+							className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900
+               text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 
+               block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600
+                dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 
+                dark:focus:border-primary-500 dark:shadow-sm-light"
+							placeholder="Subject"
 							required
 						/>
 					</div>
