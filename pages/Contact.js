@@ -1,60 +1,17 @@
 import React from "react";
 import { useState } from "react";
+import { useRouter } from "next/router";
 const Contact = () => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
-
-	// const handleSubmit = (e) => {
-	// 	e.preventDefault();
-	// 	console.log("Sending");
-	// 	let data = {
-	// 		name,
-	// 		email,
-	// 		message,
-	// 	};
-	// 	fetch("/api/contact", {
-	// 		method: "POST",
-	// 		body: JSON.stringify(data),
-	// 	});
-	// 	// .then((res) => {
-	// 	// 	console.log("Response received");
-	// 	// 	if (res.status === 200) {
-	// 	// 		console.log("Response succeeded!");
-	// 	// 		setSubmitted(true);
-	// 	// 		setName("");
-	// 	// 		setEmail("");
-	// 	// 		setBody("");
-	// 	// 	}
-	// 	// });
-	// };
+let router = useRouter()
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		console.log("Sending");
-		//   let data = {
-		// 	  name,
-		// 	  email,
-		// 	  message
-		// 	}
-		//   fetch('/api/contact', {
-		// 	  method: 'POST',
-		// 	  headers: {
-		// 		'Accept': 'application/json, text/plain, */*',
-		// 		'Content-Type': 'application/json'
-		// 	  },
-		// 	  body: JSON.stringify(data)
-		// 	}).then((res) => {
-		// 	  console.log('Response received')
-		// 	  if (res.status === 200) {
-		// 		console.log('Response succeeded!')
-		// 		setSubmitted(true)
-		// 		setName('')
-		// 		setEmail('')
-		// 		setBody('')
-		// 	  }
-		// 	})
-		//   }
+		let whapsmessage = message.replace(/\n/g, '%0D').replace(/\s/g, '%20')
+		console.log(whapsmessage);
+		router.push(`http://wa.me/2349072709373?text=${whapsmessage}`)
 	};
 	return (
 		<section className="bg-white dark:bg-gray-900">
